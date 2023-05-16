@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bbapp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/crown"
+        android:contentDescription="@string/firstimg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="3dp"
+        android:backgroundTint="#00BCD4"
+
+        android:text="@string/Heading"
+        android:textAllCaps="true"
+        android:textColor="#34E1D3"
+        android:textColorHighlight="#03A9F4"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Heading2"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#34E1D3"
+        android:textColorHighlight="#03A9F4"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="145dp"
+        android:backgroundTint="#2741D1"
+        android:text="Start "
+        android:textStyle="italic|bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:drawableRight="@drawable/baseline_play_arrow_24"/>
+
+</LinearLayout>

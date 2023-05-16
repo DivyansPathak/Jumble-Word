@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bbapp"
+    tools:context=".guessing">
+
+    <TextView
+        android:id="@+id/txtclue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="clue"
+        android:textStyle="bold|italic"
+        android:textColor="#009688"
+        android:ems="7"
+        android:background="@drawable/bbpurple"
+        android:textAlignment="center"/>
+
+
+
+    <TextView
+        android:id="@+id/edtanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+       android:padding="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bbpurple"
+        />
+
+    <GridLayout
+        android:id="@+id/gl16btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btn1"
+            android:onClick="Check1"
+
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check2"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check3"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check4"/>
+        <Button
+            android:id="@+id/btn5"
+            android:onClick="Check5"
+            />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check6"/>
+        <Button
+            android:id="@+id/btn7"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check7"/>
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check8"/>
+        <Button
+            android:id="@+id/btn9"
+            android:onClick="Check9"/>
+        <Button
+            android:id="@+id/btn10"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check10"/>
+        <Button
+            android:id="@+id/btn11"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check11"/>
+        <Button
+            android:id="@+id/btn12"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check12"/>
+        <Button
+            android:id="@+id/btn13"
+            android:onClick="Check13"/>
+        <Button
+            android:id="@+id/btn14"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check14"/>
+        <Button
+            android:id="@+id/btn15"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check15"/>
+        <Button
+            android:id="@+id/btn16"
+            android:layout_marginLeft="12dp"
+            android:onClick="Check16"/>
+    </GridLayout>
+
+
+
+</LinearLayout>
