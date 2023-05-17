@@ -3,6 +3,7 @@ package com.example.guessgame;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,9 +29,20 @@ public class guessing extends AppCompatActivity {
     private StringBuilder guessedWord;
     private Random random = new Random();
     private int remainingLives = 3;
-    private List<String> words = Arrays.asList("HELLO", "COW", "LION", "PEN");
-    private List<String> clues = Arrays.asList("Greeting", "Pet animal", "King of Jungle", "Writing");
+    private List<String> words = Arrays.asList("HELLO", "COW", "LION", "PEN" , "HEN" , "HALL" , "PAN");
+    private List<String> clues = Arrays.asList("Greeting", "Pet animal", "King of Jungle", "Writing" , "Give Eggs" , "Big Room" ,"Cooking Utensil");
 
+
+
+
+    private void Delay(){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                reStart();
+            }
+        } , 8000);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +53,7 @@ public class guessing extends AppCompatActivity {
         randmise();
 
         startNewGame();
+
 
 
     }
@@ -71,6 +84,8 @@ public class guessing extends AppCompatActivity {
         }
         if (correct) {
             Toast.makeText(this, "Correct guess!!", Toast.LENGTH_SHORT).show();
+
+
         } else {
             totalLives--;
             Toast.makeText(this, "Worng guess!! Remaining lives are " + totalLives, Toast.LENGTH_SHORT).show();
@@ -82,7 +97,7 @@ public class guessing extends AppCompatActivity {
         edtanswer.setText(guessedWord.toString());
         if(guessedWord.toString().equals(wordToGuess)){
             Toast.makeText(this,"Congratulations You have guessed the word !! ", Toast.LENGTH_LONG).show();
-            reStart();
+            Delay();
         }
 
     }
@@ -321,7 +336,7 @@ public class guessing extends AppCompatActivity {
 
     public void Gameover(){
         Toast.makeText(this,"Game Over you ran out of lives", Toast.LENGTH_LONG).show();
-        reStart();
+          Delay();
     }
     public void reStart(){
         totalLives = 3;
